@@ -421,8 +421,11 @@
         // Also trigger word count update
         renderPreview: function () {
             var self = this,
-                preview = document.getElementsByClassName('rendered-markdown')[0];
-            preview.innerHTML = this.converter.makeHtml(this.editor.getValue());
+                preview = document.getElementsByClassName('rendered-markdown')[0],
+                html = "/** @jsx React.DOM */" + this.converter.makeHtml(this.editor.getValue()).replace(/\sclass=/g, " className=");
+
+            /*jslint evil: true */
+            React.renderComponent(eval(JSXTransformer.transform(html).code), preview);
 
             this.initUploads();
 

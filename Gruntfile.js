@@ -402,7 +402,9 @@ var path           = require('path'),
                             'core/client/assets/vendor/to-title-case.js',
                             'core/client/assets/vendor/packery.pkgd.min.js',
                             'core/client/assets/vendor/fastclick.js',
-                            'core/client/assets/vendor/nprogress.js'
+                            'core/client/assets/vendor/nprogress.js',
+                            'core/client/assets/vendor/react/react-with-addons.js',
+                            'core/client/assets/vendor/react/JSXTransformer.js'
                         ],
 
                         'core/built/scripts/helpers.js': [
@@ -458,6 +460,8 @@ var path           = require('path'),
                             'core/client/assets/vendor/packery.pkgd.min.js',
                             'core/client/assets/vendor/fastclick.js',
                             'core/client/assets/vendor/nprogress.js',
+                            'core/client/assets/vendor/react/react-with-addons.js',
+                            'core/client/assets/vendor/react/JSXTransformer.js',
 
                             'core/client/init.js',
 
